@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solucaut - gerador de assinaturas</title>
+</head>
+<body>
+  <div class="header">
+    <h1>SOLUCAUT - Gerador de Assinaturas</h1>
+  </div>
+  <form>
+    <input type="submit" value="Gerar Assinatura"><br/>
+    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
+    <label>Nome: </label><input type="text" id="cargo" class="input-text"><br/>
+    <label>Nome: </label><input type="text" id="telefone" class="input-text"><br/>
+    <label>Nome: </label><input type="text" id="empresa" class="input-text"><br/>
+    <label>Nome: </label><input type="text" id="telefone 2
+" class="input-text"><br/>
+  </form>
+</body>
+</html>
