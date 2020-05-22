@@ -4,83 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <title>Solucaut - gerador de assinaturas</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
+  <div class="app">
+    <div class="header">
+      <h1>SOLUCAUT - Gerador de Assinaturas</h1>
+      <button type="submit" id="btn">
+        <h2>Gerar Assinatura</h2>
+      </button>
+    </div>
 
-  <div class="header">
-    <h1>SOLUCAUT - Gerador de Assinaturas</h1>
-  </div>
+    <div class="forms">
+      <form>
 
-  <div class="forms">
-    <button type="submit" id="btn" >Gerar Assinatura</button>
-    <form>
-      
-      <label>Nome: </label><input type="text" id="nome" class="input-text"><br />
-      <label>Celular: </label><input type="tel" id="cel" class="input-text"><br />
-      <label>Email: </label><input type="email" id="email" class="input-text"><br />
-      <label>Cargo: </label><input type="text" id="cargo" class="input-text"><br />
-    </form>
-  </div>
-  
-  <div class="assinatura">
-    <table style="font-family: Arial, Helvetica, sans-serif;">
-      <tr>
-        <td>
-          <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" alt="symbol"
-            style="width: 100px; height: 100px;" />
-        </td><!-- simbolo -->
-        <td>
-          <p id="nome" style="font-weight: bold;font-size: 18px;">NOME</p>
-          <p id="cargo" style="font-size: 14px;font-style: italic;">CARGO</p>
-        </td><!-- nome cargo -->
-        <td>
-        <td style="height:100%;border-left: 2px solid #ff6f00;"></td>
-        </td><!-- barra -->
-        <td>
-          <table>
-            <tbody>
-              <tr>
-                <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
-                    color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
-                <td>
-                  <p id="telefone" style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">CELPHONE</p>
-                </td>
-              </tr>
-              <tr>
-                <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
-                    color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
-                <td>
-                  <p id="email" style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">email@solucaut.com.br</p>
-                </td>
-              </tr>
-              <tr>
-                <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
-                    color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
-                <td><a style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;"
-                    href="https://www.solucaut.com.br" target="blank">www.solucaut.com.br</a></td>
-              </tr>
-              <tr>
-                <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
-                    color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
-                <td>
-                  <p style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">Rua dos Expedicionários, nº 568,
-                    Sala Q103-A, Cornélio Procópio - PR</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td><!-- icons info -->
-      </tr>
-      <tr>      
-        <td colspan="6" style="border-bottom: 2px solid #ff6f00;"></td>
-        <!-- barra -->
-      </tr>
-    </table>
-    <div style="width: 100%;height: 50px;"></div>
-  </div>
+        <div class="form-input">
+          <p>Nome:</p><input type="text" id="nome" class="input-text">
+        </div>
+        <div class="form-input">
+          <p>Celular:</p><input type="tel" id="cel" class="input-text">
+        </div>
+        <div class="form-input">
+          <p>Email:</p><input type="email" id="email" class="input-text">
+        </div>
+        <div class="form-input">
+          <p>Cargo:</p>
+          <select id="cargos">
+            <option value="Product owner">Esdras Battosti</option>
+            <option value="SCRUM mastes">Tashima</option>
+            <option value="dev team">Diego e Guilherme</option>
+          </select>
+        </div>
+      </form>
+    </div>
 
-  
+    <div class="sign-wraper">
+      <div class="assinatura">
+        <table style="font-family: Arial, Helvetica, sans-serif;">
+          <tr>
+            <td>
+              <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" alt="symbol"
+                style="width: 100px; height: 100px;" />
+            </td><!-- simbolo -->
+            <td>
+              <p id="nome" style="font-weight: bold;font-size: 18px;">NOME</p>
+              <p id="cargo" style="font-size: 14px;font-style: italic;">CARGO</p>
+            </td><!-- nome cargo -->
+            <td>
+            <td style="height:100%;border-left: 2px solid #ff6f00;"></td>
+            </td><!-- barra -->
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img
+                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
+                        color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+                    <td>
+                      <p id="telefone" style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">CELPHONE</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img
+                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
+                        color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+                    <td>
+                      <p id="email" style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">
+                        email@solucaut.com.br
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img
+                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
+                        color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+                    <td><a style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;"
+                        href="https://www.solucaut.com.br" target="blank">www.solucaut.com.br</a></td>
+                  </tr>
+                  <tr>
+                    <td><img
+                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
+                        color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+                    <td>
+                      <p style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">Rua dos Expedicionários, nº
+                        568,
+                        Sala Q103-A, Cornélio Procópio - PR</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td><!-- icons info -->
+          </tr>
+          <tr>
+            <td colspan="6" style="border-bottom: 2px solid #ff6f00;"></td>
+            <!-- barra -->
+          </tr>
+        </table>
+        <div style="width: 100%;height: 50px;"></div>
+      </div>
+    </div>
+  </div>
 
   <script>
     const buttonGerar = document.querySelector('#btn');
@@ -88,20 +112,23 @@
     const nomeInput = document.querySelector('.forms #nome');
     const celularInput = document.querySelector('.forms #cel');
     const emailInput = document.querySelector('.forms #email');
-    const cargoInput = document.querySelector('.forms #cargo');
-
+    const cargosInput = document.querySelector("#cargos");
+    
     const nomeField = document.querySelector('.assinatura #nome')
     const celularField = document.querySelector('.assinatura #telefone')
     const emailField = document.querySelector('.assinatura #email')
     const cargoField = document.querySelector('.assinatura #cargo')
 
-    nomeField.innerHTML = 'TESTEEEE';
+    var value = cargosInput.options[cargosInput.selectedIndex].value; // get selected option value
+    var text = cargosInput.options[cargosInput.selectedIndex].text; //get the selected option text
+    console.log({ value: value, text: text});
 
     function btn() {
+
       var nome = nomeInput.value;
       var celular = celularInput.value;
       var email = emailInput.value;
-      var cargo = cargoInput.value;
+      var cargo = cargosInput.options[cargosInput.selectedIndex].value;
       var info = {
         nome: nome,
         celular: celular,
@@ -115,6 +142,28 @@
       console.log(info);
     }
     buttonGerar.onclick = btn;
+
+
+
+    // Copiar para a area de tranferencia
+    function copyTextToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copying text command was ' + msg);
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+
+      document.body.removeChild(textArea);
+    }
   </script>
 </body>
+
 </html>
