@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Solucaut - gerador de assinaturas</title>
 </head>
+
 <body>
+
   <div class="header">
     <h1>SOLUCAUT - Gerador de Assinaturas</h1>
   </div>
-  <form>
-    <input type="submit" value="Gerar Assinatura"><br/>
-    <label>Nome: </label><input type="text" id="nome" class="input-text"><br/>
-    <label>Celular: </label><input type="tel" id="cel" class="input-text"><br/>
-    <label>Email: </label><input type="email" id="email" class="input-text"><br/>
-    <label>Cargo: </label><input type="text" id="cargo" class="input-text"><br/>
 
-    <label for="vol">Volume (between 0 and 50):</label>
-    <input type="range" id="vol" name="vol" min="0" max="50"><br/>
-    <label for="phone">Enter your phone number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="99 9 9999 9999"><br/>
-  </form>
+  <div class="forms">
+    <button type="submit" id="btn" >Gerar Assinatura</button>
+    <form>
+      
+      <label>Nome: </label><input type="text" id="nome" class="input-text"><br />
+      <label>Celular: </label><input type="tel" id="cel" class="input-text"><br />
+      <label>Email: </label><input type="email" id="email" class="input-text"><br />
+      <label>Cargo: </label><input type="text" id="cargo" class="input-text"><br />
+    </form>
+  </div>
+  
+  <div class="assinatura"></div>
+
+  <table style="font-family: Arial, Helvetica, sans-serif;">
+    <tr>
+      <td>
+        <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" alt="symbol"
+          style="width: 100px; height: 100px;" />
+      </td><!-- simbolo -->
+      <td>
+        <p style="font-weight: bold;font-size: 18px;">NOME SOBRENOME</p>
+        <p style="font-size: 14px;font-style: italic;">SUPER ESTAGIÁRIO</p>
+      </td><!-- nome cargo -->
+      <td>
+      <td style="height:100%;border-left: 2px solid #ff6f00;"></td>
+      </td><!-- barra -->
+      <td>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
+                  color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+              <td>
+                <p style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">CELPHONE</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
+                  color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+              <td>
+                <p style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">email@solucaut.com.br</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
+                  color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+              <td><a style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;"
+                  href="https://www.solucaut.com.br" target="blank">www.solucaut.com.br</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
+                  color="#ff6f00" width="13" height="13" style="background-color: #ff6f00;"></td>
+              <td>
+                <p style="font-size: 14px;margin-block-start: 0;margin-block-end: 0;">Rua dos Expedicionários, nº 568,
+                  Sala Q103-A, Cornélio Procópio - PR</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td><!-- icons info -->
+    </tr>
+    <tr>
+      <td colspan="6" style="border-bottom: 2px solid #ff6f00;"></td>
+      <!-- barra -->
+    </tr>
+  </table>
+
+  <script>
+    const buttonGerar = document.querySelector('#btn')
+    const nomeInput = document.querySelector('.forms #nome');
+    const celularInput = document.querySelector('.forms #cel');
+    const emailInput = document.querySelector('.forms #email');
+    const cargoInput = document.querySelector('.forms #cargo');
+    function btn() {
+      var nome = nomeInput.value;
+      var celular = celularInput.value;
+      var email = emailInput.value;
+      var cargo = cargoInput.value;
+      var info = {
+        nome: nome,
+        celular: celular,
+        email: email,
+        cargo: cargo
+      }
+      console.log(info);
+    }
+    buttonGerar.onclick = btn;
+  </script>
 </body>
 </html>
