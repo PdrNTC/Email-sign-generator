@@ -23,6 +23,9 @@
           <p>Nome:</p><input type="text" id="nome" class="input-text">
         </div>
         <div class="form-input">
+          <p>Sobrenome:</p><input type="text" id="sobrenome" class="input-text">
+        </div>
+        <div class="form-input">
           <p>Celular:</p><input type="tel" id="cel" class="input-text">
         </div>
         <div class="form-input">
@@ -39,139 +42,130 @@
       </form>
     </div>
 
-    <table cellpadding="0" cellspacing="0" class="cl-table" style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+    <table class="cl-table" cellpadding="0" cellspacing="0">
       <tbody>
         <tr>
           <td>
-            <table cellpadding="0" cellspacing="0" class="cl-table" style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+            <table class="cl-table" cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td width="150" style="vertical-align: middle;">
-                    <span class="sc-kgAjT cuzzPp" style="margin-right: 20px; display: block;">
-                      <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" role="presentation" width="130" class="sc-cHGsZl bHiaRe" style="max-width: 130px;">
+                  <td>
+                    <span class="assinaturaLogo">
+                      <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" class="assinaturaImagem">
                     </span>
                   </td>
                   <td style="vertical-align: middle;">
-                    <h3 color="#000000" class="sc-fBuWsC eeihxG" style="margin: 0px; font-size: 18px; color: rgb(0, 0, 0);">
-                      <span id='nome-assinatura'>Nome Sobrenome</span>
-                     <!-- 
+                    <h3 class="assinaturaNome">
+                      <span id="nome-assinatura">Nome</span>
                       <span>&nbsp;</span>
-                      <span>Sobrenome</span>
-                      -->
+                      <span id="sobrenome-assinatura">Sobrenome</span>
                     </h3>
-                    <p color="#000000" font-size="medium" class="sc-fMiknA bxZCMx" style="margin: 0px; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                    <p class="assinaturaCargo">
                       <span id="cargo-assinatura">Cargo na empresa</span>
                     </p>
-                    <p color="#000000" font-size="medium" class="sc-dVhcbM fghLuF" style="margin: 0px; font-weight: 500; color: rgb(0, 0, 0); font-size: 14px; line-height: 22px;">
+                    <p class="assinaturaEmpresa">
                       <span>Solucaut</span>
                     </p>
                   </td>
-                  <td width="30">
+                  <td>
                     <div style="width: 30px;"></div>
                   </td>
-                  <td color="#e25210" direction="vertical" width="1" class="sc-jhAzac hmXDXQ" style="width: 1px; border-bottom: none; border-left: 1px solid rgb(226, 82, 16);">
+                  <td class="assinaturaSeparador">
                   </td>
-                  <td width="30">
+                  <td>
                     <div style="width: 30px;"></div>
                   </td>
-                  <td style="vertical-align: middle;">
-                    <table cellpadding="0" cellspacing="0" class="cl-table" style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                  <td>
+                    <table class="cl-table" cellpadding="0" cellspacing="0">
                       <tbody>
                         <tr height="25" style="vertical-align: middle;">
                           <td width="30" style="vertical-align: middle;">
-                            <table cellpadding="0" cellspacing="0" class="cl-table" style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                            <table class="cl-table" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr>
                                   <td style="vertical-align: bottom;">
-                                    <span color="#e25210" width="11" class="sc-jlyJG bbyJzT" style="display: block; background-color: rgb(226, 82, 16);">
-                                      <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png" 
-                                      color="#e25210" width="13" class="sc-iRbamj blSEcj" style="display: block; background-color: rgb(226, 82, 16);">
+                                    <span class="assinaturaIconeTd">
+                                      <img
+                                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png"
+                                        class="assinaturaIconeImg">
                                     </span>
                                   </td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
-                          <td style="padding: 0px; color: rgb(0, 0, 0);"><a href="tel:43 99683 8109" color="#000000" class="sc-gipzik iyhjGb" 
-                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;">
-                              <span id='numero-assinatura'>99 99999 9999</span>
-                            </a> | 
-                            <a href="tel:43 99106 7991 " color="#000000" class="sc-gipzik iyhjGb"
-                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;"><span>43 99106 7991
-                              </span>
+                          <td style="padding: 0px; color: rgb(0, 0, 0);">
+                            <a href="tel:43 99683 8109" class="assinaturaTexto">
+                              <span id="numero-assinatura">99 99999 9999</span>
+                            </a> |
+                            <a href="tel:43 99106 7991 " class="assinaturaTexto">
+                              <span>43 99106 7991</span>
                             </a>
                           </td>
                         </tr>
                         <tr height="25" style="vertical-align: middle;">
                           <td width="30" style="vertical-align: middle;">
-                            <table cellpadding="0" cellspacing="0" class="cl-table" style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
-                              <tbody>
-                                <tr>
-                                  <td style="vertical-align: bottom;"><span color="#e25210" width="11"
-                                      class="sc-jlyJG bbyJzT"
-                                      style="display: block; background-color: rgb(226, 82, 16);">
-                                      <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
-                                        color="#e25210" width="13" class="sc-iRbamj blSEcj"
-                                        style="display: block; background-color: rgb(226, 82, 16);">
-                                      </span>
-                                    </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td style="padding: 0px;"><a href="mailto:pedrotashima@solucaut.com.br" color="#000000"
-                              class="sc-gipzik iyhjGb"
-                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;">
-                              <span id='email-assinatura'>exemplo@solucaut.com.br</span>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr height="25" style="vertical-align: middle;">
-                          <td width="30" style="vertical-align: middle;">
-                            <table cellpadding="0" cellspacing="0" class="cl-table"
-                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                            <table class="cl-table" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr>
                                   <td style="vertical-align: bottom;">
-                                    <span color="#e25210" width="11" class="sc-jlyJG bbyJzT" style="display: block; background-color: rgb(226, 82, 16);">
-                                      <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png"
-                                        color="#e25210" width="13" class="sc-iRbamj blSEcj"
-                                        style="display: block; background-color: rgb(226, 82, 16);">
-                                      </span>
-                                    </td>
+                                    <span class="assinaturaIconeTd">
+                                      <img
+                                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png"
+                                        class="assinaturaIconeImg">
+                                    </span>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
                           <td style="padding: 0px;">
-                            <a href="//www.solucaut.com.br" color="#000000" class="sc-gipzik iyhjGb"
-                              style="text-decoration: none; color: rgb(0, 0, 0); font-size: 12px;">
+                            <a href="mailto:pedrotashima@solucaut.com.br" class="assinaturaTexto">
+                              <span id="email-assinatura">exemplo@solucaut.com.br</span>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr height="25" style="vertical-align: middle;">
+                          <td width="30" style="vertical-align: middle;">
+                            <table class="cl-table" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: bottom;">
+                                    <span class="assinaturaIconeTd">
+                                      <img
+                                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png" class="assinaturaIconeImg" width="13">
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="padding: 0px;">
+                            <a href="//www.solucaut.com.br" class="assinaturaTexto">
                               <span>www.solucaut.com.br</span>
                             </a>
                           </td>
                         </tr>
                         <tr height="25" style="vertical-align: middle;">
                           <td width="30" style="vertical-align: middle;">
-                            <table cellpadding="0" cellspacing="0" class="cl-table"
-                              style="vertical-align: -webkit-baseline-middle; font-size: medium; font-family: Arial;">
+                            <table class="cl-table" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr>
-                                  <td style="vertical-align: bottom;"><span color="#e25210" width="11" class="sc-jlyJG bbyJzT"
-                                      style="display: block; background-color: rgb(226, 82, 16);">
-                                      <img src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png"
-                                        color="#e25210" width="13" class="sc-iRbamj blSEcj"
-                                        style="display: block; background-color: rgb(226, 82, 16);">
-                                      </span>
-                                    </td>
+                                  <td style="vertical-align: bottom;">
+                                    <span class="assinaturaIconeTd">
+                                      <img
+                                        src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/address-icon-2x.png" class="assinaturaIconeImg" width="13">
+                                    </span>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
-                          <td style="padding: 0px;">
-                            <span color="#000000" class="sc-csuQGl CQhxV" style="font-size: 12px; color: rgb(0, 0, 0);">
-                            <span>Rua dos Expedicionários, 568, Sala Q103-A, Cornélio Procópio - PR</span>
-                          </span>
-                        </td>
+                          <td>
+                            <span class="assinaturaEndereco">
+                              <span>Rua dos Expedicionários, 568, Sala Q103-A, Cornélio Procópio - PR</span>
+                            </span>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
