@@ -59,7 +59,9 @@ function primeirasMaiusculas(nome) {
     }
     // Por fim, retornamos a junçao dos pedaços
     return sentence.join(" ");
-  } catch(err) {}
+  } catch(err) {
+    return ''
+  }
 }
 
 function editaCelular(cel) {
