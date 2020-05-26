@@ -1,20 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Solucaut - gerador de assinaturas</title>
-</head>
-<body>
-  <div class="header">
-    <h1>SOLUCAUT - Gerador de Assinaturas</h1>
-  </div>
-  <form>
-    <input type="submit" value="Gerar Assinatura"><br/>
-    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
-    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
-    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
-    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
-    <label>Nome: </label><input type="text" id="name" class="input-text"><br/>
-  </form>
-</body>
+<!doctype html>
+<html lang="pt-br">
+  
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+     <div class="container">
+       <div class ="row">
+         <div class="col-12 text-center my-5">
+           <h1 class="display-4"><font face ="Dear Sunshine">SOLUCAUT</font></h1></br></h1>
+           
+           <p class ="lead">SOLUCAUT-Soluções em Controle,Automação e Eletronica</p>
+         </div>
+       </div>
+     </div>
+     <div class="row justify-content-center mb-5">
+       <div class="col-sm-12 col-md-10 col-lg-8">
+         <form>
+
+            <div class="form-row">
+             <div class="form-group col-sm-6">
+              
+              <label for="inputNome"><b>Seu Nome</b></label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome"><span class="assinaturaEndereco" style="font-size: 12px; color: rgb(0, 0, 0);"></span>
+
+
+            </div>
+              <div class="form-group col-sm-6">
+                <label for="inputSobrenome"><b>Seu Sobrenome</b></label>
+                <input type="text" class="form-control" id="inputSobrenome"placeholder="Sobrenome">
+              </div>
+
+              <div class="form-group col-sm-6">
+                <label for="inputEmail"><b>Seu Email</b></label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="Email SOLUCAUT">
+              </div>
+
+              
+             <div class ="form-group col-sm-6">
+                <label for="inputCel"><b>Seu telefone</b> </label>
+                <input type="text" class="form-control" id="inputCel" placeholder="Celular">
+             </div>
+ 
+            </div>
+    
+             <div class="form-input  col-sm-6"></div>
+              <p>Cargo : </p>
+              <select id="cargos">
+                <option value="Presidente">Presidente</option>
+                <option value="Vice-Presidente">Vice-Presidente</option>
+                <option value="Diretor Comercial">Diretor Comercial</option>
+                <option value="Diretor de Projetos">Diretor de Projetos</option>
+    
+                <option value="Gerente de Marketing">Gerente de Marketing</option>
+                <option value="Gerente de Projetos">Gerente de Projetos</option>
+                <option value="Gerente Financeiro">Gerente Financeiro</option>
+                <option value="Gerente de Recursos Humanos">Gerente de Recursos Humanos</option>
+                <option value="Gerente de Negócios">Gerente de Negócios</option>
+    
+                <option value="Gerente de Negócios">Gerente de Negócios</option>
+                <option value="Assessor de Projetos">Assessor de Projetos</option>
+                <option value="Gerente de Projetos">Assessor Financeiro</option>
+                <option value="Gerente de Projetos">Assessor de Recursos Humanos</option>
+                <option value="Gerente de Projetos">Assessor de Negócios</option>
+    
+                <option value="Trainee de Marketing">Trainee de Marketing</option>
+                <option value="Trainee de Projetos">Trainee de Recursos Humanos</option>
+                <option value="Trainee de Marketing">Trainee de Negócios</option>
+                <option value="Gerente de Projetos">Trainee de Projetos</option>
+                <option value="Gerente de Projetos">Trainee Financeiro</option>
+              </select>
+              
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="assinatura-div">
+          <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+            <tbody>
+              <tr>
+                <td>
+                  <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="assinaturaLogo" style="margin-right: 20px; display: block;">
+                            <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" class="assinaturaImagem" style="max-width: 130px;">
+                          </span>
+                        </td>
+                        <td style="vertical-align: middle;">
+                          <h3 class="assinaturaNome" style="margin: 0px;font-size: 18px;color: rgb(0, 0, 0);">
+                            <span id="nome-assinatura">Nome</span>
+                            <span>&nbsp;</span>
+                            <span id="sobrenome-assinatura">Sobrenome</span>
+                          </h3>
+                          <p class="assinaturaCargo" style="margin: 0px; color: rgb(0, 0, 0);font-size: 14px;line-height: 22px;">
+                            <span id="cargo-assinatura">Cargo na empresa</span>
+                          </p>
+                          <p class="assinaturaEmpresa"
+                          style="margin: 0px;font-weight: 500;color: rgb(0, 0, 0);font-size: 14px;line-height: 22px;">
+                            <span>Solucaut</span>
+                          </p>
+                        </td>
+                        <td>
+                          <div style="width: 30px;"></div>
+                        </td>
+                        <td class="assinaturaSeparador" style="width: 1px;border-bottom: none;border-left: 1px solid rgb(226, 82, 16);">
+                        </td>
+                        <td>
+                          <div style="width: 30px;"></div>
+                        </td>
+                        <td>
+                          <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                            <tbody>
+                              <tr height="25" style="vertical-align: middle;">
+                                <td width="30" style="vertical-align: middle;">
+                                  <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="vertical-align: bottom;">
+                                          <span class="assinaturaIconeTd" style="display: block;">
+                                            <img
+                                              src="https://solucaut.com.br/assinatura/img/whatsapp.png" 
+                                              class="assinaturaIconeImg" width="13" style="  display: block;">
+                                          </span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td style="padding: 0px; color: rgb(0, 0, 0);">
+                                  <a href="tel:43 99683 8109" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
+                                    <span id="numero-assinatura">99 99999 9999</span>
+                                  </a> |
+                                  <a href="tel:43 99106 7991 " class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
+                                    <span>43 99106 7991</span>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr height="25" style="vertical-align: middle;">
+                                <td width="30" style="vertical-align: middle;">
+                                  <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="vertical-align: bottom;">
+                                          <span class="assinaturaIconeTd" style="display: block;">
+                                            <img
+                                              src="https://solucaut.com.br/assinatura/img/mail.png" 
+                                              class="assinaturaIconeImg" width="13" style="  display: block;">
+                                          </span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td style="padding: 0px;">
+                                  <a href="mailto:pedrotashima@solucaut.com.br" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
+                                    <span id="email-assinatura">exemplo@solucaut.com.br</span>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr height="25" style="vertical-align: middle;">
+                                <td width="30" style="vertical-align: middle;">
+                                  <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="vertical-align: bottom;">
+                                          <span class="assinaturaIconeTd" style="display: block;">
+                                            <img
+                                              src="https://solucaut.com.br/assinatura/img/link.png" 
+                                              class="assinaturaIconeImg" width="13" style="  display: block;"> 
+                                          </span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td style="padding: 0px;">
+                                  <a href="//www.solucaut.com.br" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
+                                    <span>www.solucaut.com.br</span>
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr height="25" style="vertical-align: middle;">
+                                <td width="30" style="vertical-align: middle;">
+                                  <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">                              <tbody>
+                                      <tr>
+                                        <td style="vertical-align: bottom;">
+                                          <span class="assinaturaIconeTd" style="display: block;">
+                                            <img
+                                              src="https://solucaut.com.br/assinatura/img/pin.png" 
+                                              class="assinaturaIconeImg" width="13" style="  display: block;">
+                                          </span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <span class="assinaturaEndereco" style="font-size: 12px; color: rgb(0, 0, 0);">
+                                    <a href="https://g.page/SOLUCAUT" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
+                                      <span>Rua dos Expedicionários, 568, Sala Q103-A, Cornélio Procópio - PR</span>
+                                    </a>
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          </div>
+        </div>
+      </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <script src="index.js"></script>
+      </body>
+      
+      </html>
+       </div>
+     </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
 </html>
