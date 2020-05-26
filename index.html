@@ -4,19 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Solucaut - gerador de assinaturas</title>
+  <!--Icone que fica no título da página - DEVE SER ALTERADO PARA SER PUBLICADO NO SITE-->
+  <link rel="shortcut icon" type="image/x-icon" href="public/imgs/icone.png">
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
+
   <div class="app">
+    <!-- Parte superior da página com o cabeçalho e o botão de criação  -->
     <div class="header">
       <h1>SOLUCAUT - Gerador de Assinaturas</h1>
-
       <button type="submit" id="btn-gerar">
         <h2>Gerar Assinatura</h2>
       </button>
     </div>
-
+    <!-- Formulário onde o usuário coloca os dados que serão utilizados na assinatura -->
     <div class="forms">
       <form>
         <div class="form-input">
@@ -31,6 +34,7 @@
         <div class="form-input">
           <p>Email:</p><input type="email" id="email" class="input-text">
         </div>
+        <!-- Lista de seleção de cargos. Conforme os cargos na empresa mudarem, essa lista deve ser atualizada -->
         <div class="form-input">
           <p>Cargo:</p>
           <select id="cargos">
@@ -38,6 +42,7 @@
             <option value="Vice-Presidente">Vice-Presidente</option>
             <option value="Diretor Comercial">Diretor Comercial</option>
             <option value="Diretor de Projetos">Diretor de Projetos</option>
+            <option value="Consultor">Consultor</option>
 
             <option value="Gerente de Marketing">Gerente de Marketing</option>
             <option value="Gerente de Projetos">Gerente de Projetos</option>
@@ -61,152 +66,166 @@
       </form>
     </div>
 
-<div class="assinatura-div">
-    <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-      <tbody>
-        <tr>
-          <td>
-            <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="assinaturaLogo" style="margin-right: 20px; display: block;">
-                      <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" class="assinaturaImagem" style="max-width: 130px;">
-                    </span>
-                  </td>
-                  <td style="vertical-align: middle;">
-                    <h3 class="assinaturaNome" style="margin: 0px;font-size: 18px;color: rgb(0, 0, 0);">
-                      <span id="nome-assinatura">Nome Sobrenome</span>
-                    </h3>
-                    <p class="assinaturaCargo" style="margin: 0px; color: rgb(0, 0, 0);font-size: 14px;line-height: 22px;">
-                      <span id="cargo-assinatura">Cargo na empresa</span>
-                    </p>
-                    <p class="assinaturaEmpresa"
-                    style="margin: 0px;font-weight: 500;color: rgb(0, 0, 0);font-size: 14px;line-height: 22px;">
-                      <span>Solucaut</span>
-                    </p>
-                  </td>
-                  <td>
-                    <div style="width: 30px;"></div>
-                  </td>
-                  <td class="assinaturaSeparador" style="width: 1px;border-bottom: none;border-left: 1px solid rgb(226, 82, 16);">
-                  </td>
-                  <td>
-                    <div style="width: 30px;"></div>
-                  </td>
-                  <td>
-                    <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-                      <tbody>
-                        <tr height="25" style="vertical-align: middle;">
-                          <td width="30" style="vertical-align: middle;">
-                            <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-                              <tbody>
-                                <tr>
-                                  <td style="vertical-align: bottom;">
-                                    <span class="assinaturaIconeTd" style="display: block;">
-                                      <img
-                                        src="https://solucaut.com.br/assinatura/img/whatsapp.png" 
-                                        class="assinaturaIconeImg" width="13" style="  display: block;">
-                                    </span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td style="padding: 0px; color: rgb(0, 0, 0);">
-                            <a href="tel:99 99999 9999" id="numero-assinatura" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
-                             99 99999 9999
-                            </a> |
-                            <a href="tel:43 99106 7991 " class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
-                              <span>43 99106 7991</span>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr height="25" style="vertical-align: middle;">
-                          <td width="30" style="vertical-align: middle;">
-                            <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-                              <tbody>
-                                <tr>
-                                  <td style="vertical-align: bottom;">
-                                    <span class="assinaturaIconeTd" style="display: block;">
-                                      <img
-                                        src="https://solucaut.com.br/assinatura/img/mail.png" 
-                                        class="assinaturaIconeImg" width="13" style="  display: block;">
-                                    </span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td style="padding: 0px;">
-                            <a href="mailto:exemplo@solucaut.com.br" id="email-assinatura" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
-                              exemplo@solucaut.com.br
-                            </a>
-                          </td>
-                        </tr>
-                        <tr height="25" style="vertical-align: middle;">
-                          <td width="30" style="vertical-align: middle;">
-                            <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
-                              <tbody>
-                                <tr>
-                                  <td style="vertical-align: bottom;">
-                                    <span class="assinaturaIconeTd" style="display: block;">
-                                      <img
-                                        src="https://solucaut.com.br/assinatura/img/link.png" 
-                                        class="assinaturaIconeImg" width="13" style="  display: block;"> 
-                                    </span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td style="padding: 0px;">
-                            <a href="//www.solucaut.com.br" class="assinaturaTexto" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
-                              <span>www.solucaut.com.br</span>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr height="25" style="vertical-align: middle;">
-                          <td width="30" style="vertical-align: middle;">
-                            <table class="cl-table" cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">                              <tbody>
-                                <tr>
-                                  <td style="vertical-align: bottom;">
-                                    <span class="assinaturaIconeTd" style="display: block;">
-                                      <img
-                                        src="https://solucaut.com.br/assinatura/img/pin.png" 
-                                        class="assinaturaIconeImg" width="13" style="  display: block;">
-                                    </span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td>
-                            <span class="assinaturaEndereco" style="font-size: 12px; color: rgb(0, 0, 0);">
-                              <a href="https://g.page/SOLUCAUT" style="text-decoration: none;color: rgb(0, 0, 0);font-size: 12px;">
-                                <span>Rua dos Expedicionários, 568, Sala Q103-A, Cornélio Procópio - PR</span>
+  <!-- Tabela com o modelo da assinatura. Créditos para o https://www.hubspot.com/email-signature-generator -->
+  <div class="assinatura-div">
+      <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+        <!-- Parte esquerda da assinatura com a logo da empresa e informações do usuário  -->
+        <tbody>
+          <tr>
+            <td>
+              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                <tbody>
+                  <tr>
+                    <!-- Logo da Empresa com referência ao site  -->
+                    <td>
+                      <span style="margin-right: 20px; display: block;">
+                        <a href="https://solucaut.com.br">
+                          <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" style="max-width: 130px;">
+                        </a>
+                      </span>
+                    </td>
+                    <!-- Informações do usuário que serão alteradas pelo JS conforme os dados inseridos no forms  -->
+                    <td style="vertical-align: middle;">
+                      <h3 id="nome-assinatura" style="margin: 0px;font-size: 18px;">
+                        Nome Sobrenome
+                      </h3>
+                      <p id="cargo-assinatura" style="margin: 0px;font-size: 14px;line-height: 22px;">
+                        Cargo na empresa
+                      </p>
+                      <p style="margin: 0px;font-weight: 500;font-size: 14px;line-height: 22px;">
+                        Solucaut
+                      </p>
+                    </td>
+                    <!-- Espaço mínimo entre os textos e a barra de divisão  -->
+                    <td>
+                      <div style="width: 30px;"></div>
+                    </td>
+                    <!-- Barra que divide o lado esquerdo e o direito  -->
+                    <td style="width: 1px;border-bottom: none;border-left: 1px solid rgb(226, 82, 16);">
+                    </td>
+                    <td>
+                      <div style="width: 30px;"></div>
+                    </td>
+                    <td>
+                      <!-- Parte direita da assinatura com informações de contato do usuário e padrões da Solucaut  -->
+                      <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                        <tbody>
+                          <tr height="25" style="vertical-align: middle;">
+                            <td width="30" style="vertical-align: middle;">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                <tbody>
+                                  <!--  ícone do WhatsApp -->
+                                  <tr>
+                                    <td style="vertical-align: bottom;">
+                                      <span style="display: block;">
+                                        <img
+                                          src="https://solucaut.com.br/assinatura/img/whatsapp.png" width="13" style="  display: block;">
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <!-- Números de telefone com referência a eles  -->
+                            <td style="padding: 0px; color: black;">
+                              <!--  Número alterado pelo JS conforme os dados inseridos pelo usuário -->
+                              <a href="tel:99 99999 9999" id="numero-assinatura" style="text-decoration: none;color:black;font-size: 12px;">
+                              99 99999 9999
+                              </a> |
+                              <!-- Número da Solucaut, estático, não pode ser alterado pelo usuário  -->
+                              <a href="tel:43 99106 7991 " style="text-decoration: none;color: black;font-size: 12px;">
+                                43 99106 7991
                               </a>
-                            </span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
+                            </td>
+                          </tr>
+                          <tr height="25" style="vertical-align: middle;">
+                            <td width="30" style="vertical-align: middle;">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                <tbody>
+                                  <!--  ícone do email -->
+                                  <tr>
+                                    <td style="vertical-align: bottom;">
+                                      <span style="display: block;">
+                                        <img src="https://solucaut.com.br/assinatura/img/mail.png" width="13" style="  display: block;">
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <!--  Email fornecido pelo usuário, alterado pelo JS -->
+                            <td style="padding: 0px;">
+                              <a id="email-assinatura" href="mailto:exemplo@solucaut.com.br" style="text-decoration: none;color: black;font-size: 12px;">
+                                exemplo@solucaut.com.br
+                              </a>
+                            </td>
+                          </tr>
+                          <tr height="25" style="vertical-align: middle;">
+                            <td width="30" style="vertical-align: middle;">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                <tbody>
+                                  <!--  Ícone do link do site -->
+                                  <tr>
+                                    <td style="vertical-align: bottom;">
+                                      <span style="display: block;">
+                                        <img src="https://solucaut.com.br/assinatura/img/link.png" width="13" style="  display: block;"> 
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td style="padding: 0px;">
+                              <!--  Site da solucaut com referência a ele, estático -->
+                              <a href="//www.solucaut.com.br" style="text-decoration: none;color: black;font-size: 12px;">
+                                <span>www.solucaut.com.br</span>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr height="25" style="vertical-align: middle;">
+                            <td width="30" style="vertical-align: middle;">
+                              <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle;font-size: medium;font-family: Arial;">
+                                <tbody>
+                                  <!--  Ícone de Pin para o endereço -->
+                                  <tr>
+                                    <td style="vertical-align: bottom;">
+                                      <span style="display: block;">
+                                        <img src="https://solucaut.com.br/assinatura/img/pin.png" width="13" style="  display: block;">
+                                      </span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td>
+                              <!--  Endereço da Solucaut com referência ao Google Maps  -->
+                              <span  style="font-size: 12px; color: black;">
+                                <a href="https://g.page/SOLUCAUT" style="text-decoration: none;color: black;font-size: 12px;">
+                                  Rua dos Expedicionários, 568, Sala Q103-A, Cornélio Procópio - PR
+                                </a>
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
     </div>
+  </div>
 
+  <!--  Referência aos ícones utilizados e seus autores -->
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and 
+    <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from 
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
   </div>
-  </div>
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a
-      href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/"
-      title="Flaticon">www.flaticon.com</a></div>
+
   <script src="index.js"></script>
 </body>
 
