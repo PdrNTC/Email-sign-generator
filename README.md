@@ -25,4 +25,4 @@ Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura
 
 ##  Licença
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
