@@ -9,6 +9,10 @@ Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura
 ![Assinatura] 
 (https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/blob/master/Images/preview-assinatura.png)
 
+If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 ### Pré-requisitos
 
 É necessário apenas um navegador web e editor de código para fazer alterações no projeto.
