@@ -7,7 +7,7 @@ Gerador de assinaturas para clients de email desenvolvido para os membros da Sol
 Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura 
 
 ![Assinatura] 
-(https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/blob/master/Images/preview-assinatura.png)
+(https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/blob/master/Images/preview-assinatura.png?raw=true)
 
 If you want to embed images, this is how you do it:
 
