@@ -5,6 +5,7 @@ Gerador de assinaturas para clients de email desenvolvido para os membros da Sol
 ## Iniciando 
 
 Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura 
+![Assinatura] 
 
 ### Pré-requisitos
 
