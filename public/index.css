@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EDEDED;
+}
+
+label {
+  color: #5B3314;
+}
+input {
+  outline: none;
+  border: 2px solid #E25210;
+  border-radius: 1vh;
+  height: 5vh;
+  background-color: #E25210;
+  color: #ffffff;
+  width: 80%;
+  text-align: center;
+}
+input:active {
+  outline: none;
+  border: 2px solid #E25210;
+  border-radius: 1vh;
+  height: 5vh;
+  background-color: #E25210;
+  color: #ffffff;
+  width: 80%;
+  text-align: center;
+}
+
+.app {
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.header button {
+  background-color: #E25210;
+  color: #5B3314;
+  font-size: large;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.header button:active {
+  background-color: #E25210;
+  color: #5B3314;
+  font-size: large;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.forms {
+  margin-top: 5vh;
+  background-color: #F4F4F4;
+  padding: 5vh 1vw 5vh 1vw;
+  align-items: flex-end;
+}
+.form-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* top right bottom left */
+  padding: 1vh 1vw 1vh 1vw;
+  text-align: right;
+}
+.form-input p {
+  width: 15%;
+}
+
+.sign-wraper {
+  background-color: #EDEDED;
+  padding: 10vh;
+}
+.assinatura {
+  background-color: #ffffff;
+}
+
+.assinatura-iframe {
+  width: 100%;
+  height: 30%;
+}
+/*
+
+.cl-table {
+  vertical-align: -webkit-baseline-middle; 
+  font-size: medium; 
+  font-family: Arial;
+}
+
+.assinaturaLogo {
+  margin-right: 20px; 
+  display: block;
+}
+
+.assinaturaImagem {
+  max-width: 130px;
+}
+
+.assinaturaNome {
+  margin: 0px; 
+  font-size: 18px; 
+  color: rgb(0, 0, 0);
+}
+
+.assinaturaCargo {
+  margin: 0px; color: rgb(0, 0, 0); 
+  font-size: 14px; 
+  line-height: 22px;
+}
+
+.assinaturaEmpresa {
+  margin: 0px; 
+  font-weight: 500; 
+  color: rgb(0, 0, 0); 
+  font-size: 14px; 
+  line-height: 22px;
+}
+
+.assinaturaSeparador { 
+  width: 1px; 
+  border-bottom: none; 
+  border-left: 1px solid rgb(226, 82, 16);
+}
+
+.assinaturaIconeTd {
+  display: block; 
+}
+
+.assinaturaIconeImg {
+  display: block; 
+}
+
+.assinaturaIconeTd {
+  display: block; 
+}
+
+.assinaturaIconeImg {
+  display: block; 
+}
+
+.assinaturaTexto {
+  text-decoration: none; 
+  color: rgb(0, 0, 0); 
+  font-size: 12px;
+}
+
+.assinaturaEndereco{
+  font-size: 12px; 
+  color: rgb(0, 0, 0);
+}
+*/
