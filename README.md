@@ -4,59 +4,23 @@ Gerador de assinaturas para clients de email desenvolvido para os membros da Sol
 
 ## Iniciando 
 
-Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura
-
+Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura 
 
 ### Pré-requisitos
 
 É necessário apenas um navegador web e editor de código para fazer alterações no projeto.
 
-### Break down into end to end tests
+## Construído com
 
-Explain what these tests test and why
+* [Bootstrap](https://getbootstrap.com/) - Framework do front-end
+* [Hubspot](https://www.hubspot.com/email-signature-generator) - Modelo base para a assinatura
 
-```
-Give an example
-```
+## Autores
 
-### And coding style tests
+* **Diego Ferreira** - *back-end* - [Diego Lopes Ferreira](https://github.com/Diego-Lopes-Ferreira)
+* **Pedro Tashima** - *scrum master* - [Tashima42](https://github.com/Tashima42)
+* **Guilherme Schmidt** - *front-end* - [Guilherme Schmidt](https://github.com/Diego-Lopes-Ferreira)
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
+##  Licença
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
