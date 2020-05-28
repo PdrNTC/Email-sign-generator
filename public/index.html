@@ -6,65 +6,90 @@
   <title>Solucaut - gerador de assinaturas</title>
   <!--Icone que fica no título da página - DEVE SER ALTERADO PARA SER PUBLICADO NO SITE-->
   <link rel="shortcut icon" type="image/x-icon" href="public/imgs/icone.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
 
-  <div class="app">
-    <!-- Parte superior da página com o cabeçalho e o botão de criação  -->
-    <div class="header">
-      <h1>SOLUCAUT - Gerador de Assinaturas</h1>
-      <button type="submit" id="btn-gerar">
-        <h2>Gerar Assinatura</h2>
-      </button>
+  <div class="container-fluid">
+    <!-- Parte superior da página com o cabeçalho -->
+    <div class="col-12 text-center my-4">
+      <span class="assinaturaLogo" style="margin-right: 0px; display: block;">
+      <img src="https://solucaut.com.br/wp-content/uploads/2019/05/icone.png" class="assinaturaImagem" style="max-width: 100px;">
+      </span>
+      <h1 class="display-4"><font face ="Arial">SOLUCAUT</font></h1>
+      <p class="h2"> Soluções em Controle, Automação e Eletrônica</p>
     </div>
+  </div>
     <!-- Formulário onde o usuário coloca os dados que serão utilizados na assinatura -->
-    <div class="forms">
+    <div class="row justify-content-center mb-5">
+      <div class="col-sm-12 col-md-10 col-lg-8">
       <form>
-        <div class="form-input">
-          <p>Nome:</p><input type="text" id="nome" class="input-text">
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <div class="form-input">
+              <p>Nome:</p><input type="text" id="nome" class="input-text">
+            </div>
+          </div>
+          <div class="form-group col-sm-6">
+            <div class="form-input">
+              <p>Sobrenome:</p><input type="text" id="sobrenome" class="input-text">
+            </div>
+          </div>
+          <div class="form-group col-sm-6">
+            <div class="form-input"><font face ="Arial"></font>
+              <p>Celular:</p><input type="tel" id="cel" class="input-text">
+            </div>
+          </div>
+          <div class ="form-group col-sm-6">
+            <div class="form-input">
+              <p>Email:</p><input type="email" id="email" class="input-text">
+            </div>
+          </div>
         </div>
-        <div class="form-input">
-          <p>Sobrenome:</p><input type="text" id="sobrenome" class="input-text">
-        </div>
-        <div class="form-input">
-          <p>Celular:</p><input type="tel" id="cel" class="input-text">
-        </div>
-        <div class="form-input">
-          <p>Email:</p><input type="email" id="email" class="input-text">
-        </div>
-        <!-- Lista de seleção de cargos. Conforme os cargos na empresa mudarem, essa lista deve ser atualizada -->
-        <div class="form-input">
-          <p>Cargo:</p>
-          <select id="cargos">
-            <option value="Presidente">Presidente</option>
-            <option value="Vice-Presidente">Vice-Presidente</option>
-            <option value="Diretor Comercial">Diretor Comercial</option>
-            <option value="Diretor de Projetos">Diretor de Projetos</option>
-            <option value="Consultor">Consultor</option>
+            <!-- Lista de seleção de cargos. Conforme os cargos na empresa mudarem, essa lista deve ser atualizada -->
+            <div class="form-input  col-sm-4">
+              <p>Cargo:</p>
+              <select id="cargos">
+                <option value="Presidente">Presidente</option>
+                <option value="Vice-Presidente">Vice-Presidente</option>
+                <option value="Diretor Comercial">Diretor Comercial</option>
+                <option value="Diretor de Projetos">Diretor de Projetos</option>
+                <option value="Consultor">Consultor</option>
 
-            <option value="Gerente de Marketing">Gerente de Marketing</option>
-            <option value="Gerente de Projetos">Gerente de Projetos</option>
-            <option value="Gerente Financeiro">Gerente Financeiro</option>
-            <option value="Gerente de Recursos Humanos">Gerente de Recursos Humanos</option>
-            <option value="Gerente de Negócios">Gerente de Negócios</option>
+                <option value="Gerente de Marketing">Gerente de Marketing</option>
+                <option value="Gerente de Projetos">Gerente de Projetos</option>
+                <option value="Gerente Financeiro">Gerente Financeiro</option>
+                <option value="Gerente de Recursos Humanos">Gerente de Recursos Humanos</option>
+                <option value="Gerente de Negócios">Gerente de Negócios</option>
 
-            <option value="Assessor de Negócios">Assessor de Negócios</option>
-            <option value="Assessor de Projetos">Assessor de Projetos</option>
-            <option value="Assessor Financeiro">Assessor Financeiro</option>
-            <option value="Assessor de Recursos Humanos">Assessor de Recursos Humanos</option>
-            <option value="Assessor de Negócios">Assessor de Negócios</option>
+                <option value="Assessor de Negócios">Assessor de Negócios</option>
+                <option value="Assessor de Projetos">Assessor de Projetos</option>
+                <option value="Assessor Financeiro">Assessor Financeiro</option>
+                <option value="Assessor de Recursos Humanos">Assessor de Recursos Humanos</option>
+                <option value="Assessor de Negócios">Assessor de Negócios</option>
 
-            <option value="Trainee de Marketing">Trainee de Marketing</option>
-            <option value="Trainee de Recursos Humanos">Trainee de Recursos Humanos</option>
-            <option value="Trainee de Negócios">Trainee de Negócios</option>
-            <option value="Trainee de Projetos">Trainee de Projetos</option>
-            <option value="Trainee Financeiro">Trainee Financeiro</option>
-          </select>
+                <option value="Trainee de Marketing">Trainee de Marketing</option>
+                <option value="Trainee de Recursos Humanos">Trainee de Recursos Humanos</option>
+                <option value="Trainee de Negócios">Trainee de Negócios</option>
+                <option value="Trainee de Projetos">Trainee de Projetos</option>
+                <option value="Trainee Financeiro">Trainee Financeiro</option>
+              </select>
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+          </form>
+          <div class="col-12 text-center my-4">
+            <!--Botão para gerar Assinatura-->
+            <button type="submit" id="btn-gerar" style="font-size: small;color: rgb(0, 0, 0);">
+              <h2>Gerar Assinatura</h2>
+            </button>
+          </div>
+        </div>
 
   <!-- Tabela com o modelo da assinatura. Créditos para o https://www.hubspot.com/email-signature-generator -->
   <div class="assinatura-div">
@@ -218,12 +243,6 @@
       </table>
       </div>
     </div>
-  </div>
-
-  <!--  Referência aos ícones utilizados e seus autores -->
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and 
-    <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from 
-    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
   </div>
 
   <script src="index.js"></script>
