@@ -2,19 +2,18 @@
 
 
 ## Temos que fazer
-[V] - Tirar o email
-[V] - Colocar o email contato@solucaut.com.br ao invés do pessoal
-[V] - Colocar um identificador no telefone: pessoal vs empresa
-[V] - Consertar as imagens
+[x] - Tirar o email
+[x] - Colocar o email contato@solucaut.com.br ao invés do pessoal
+[x] - Colocar um identificador no telefone: pessoal vs empresa
+[x] - Consertar as imagens
 
 ## Talvez
-[V] - Colocar redes socias da empresa ou da pessoa
-    [V] - Facebook
-    [V] - Instagram
-    [V] - LinkedIn
+[x] - Colocar redes socias da empresa ou da pessoa
+    [x] - Facebook
+    [x] - Instagram
+    [x] - LinkedIn
 [ ] - Tirar endereço físico
 
 ## bugs
-[V] - Se não tiver o nome - volta a palavra NOME
-[V] - Se não tiver o sobrenome - volta a palavra SOBRENOME
+[x] - Se não tiver o nome ou sobrenome - volta a palavra NOME
 
