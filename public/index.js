@@ -1,97 +1,128 @@
-// Encontra o botao escrito Gerar Assinatura e define qual a função queserá executada quando este for pressionado
-const buttonGerar = document.getElementById('btn-gerar')
-buttonGerar.onclick = btn;
+const buttonCopiar = document.getElementById('btn-copiar')
+buttonCopiar.onclick = copiar;
 
-// Encontra todas as entradas de texto
 const nomeInput = document.getElementById('nome');
 const sobrenomeInput = document.getElementById('sobrenome');
-const celularInput = document.getElementById('cel');
-const emailInput = document.getElementById('email');
+const celularInput = document.getElementById('celular');
 const cargosInput = document.getElementById('cargos');
 
-// Encontra todas as areas que serão preenchidas
-// (os campos na assinatura)
+nomeInput.addEventListener('input', () => btn())
+sobrenomeInput.addEventListener('input', () => btn())
+celularInput.addEventListener('input', () => btn())
+cargosInput.addEventListener('input', () => btn())
+
 const nomeCompletoField = document.getElementById('nome-assinatura');
-const celularField = document.getElementById('numero-assinatura');
-const emailField = document.getElementById('email-assinatura');
+const celularField = document.getElementById('celular-assinatura');
 const cargoField = document.getElementById('cargo-assinatura');
 
-// Define a função que será executada quando o botão for pressionado
 function btn() {
-  // 1 - Salva as informações em variaveis
   var nome = nomeInput.value;
   var sobrenome = sobrenomeInput.value;
   var celular = celularInput.value;
-  var email = emailInput.value;
   var cargo = cargosInput.options[cargosInput.selectedIndex].value;
 
-  // 2 - Edita algumas das entradas, pra manter um padrão
-  let nomeCompleto = nome.trim() + ' ' + sobrenome.trim()
+  let nomeCompleto = nome + ' ' + sobrenome
   let celularEditado = editaCelular(celular.trim())
-  let emailEditado = checkEmail(email);
-  
-  // 3 - Preenche os campos com os valores encontrados
-  nomeCompletoField.innerHTML = primeirasMaiusculas(nomeCompleto);
+
+  nomeCompletoField.innerHTML = editaNome(nomeCompleto);
   celularField.innerHTML = celularEditado;
-  emailField.innerHTML = emailEditado;
   cargoField.innerHTML = cargo;
-  
-  // 4 - Preenche as informações de links nos campos necessários
-  celularField.setAttribute('href', `tel:${celularEditado}`);
-  emailField.setAttribute('href', `mailto:${email}`);
+
+  celularField.setAttribute('href', `tel:${celularEditado.replace(/ /g, '')}`);
 }
 
-// Define função que deixa as primeiras letras do nome Maiusculas
-function primeirasMaiusculas(nome) {
-  try {
+function editaNome(nome) {
+  let palavras = nome.split(' ')
+  for (let i = 0; i < palavras.length; i++) {
+    palavras[i] = primeirasMaiusculas(palavras[i])
+  }
+  if (palavras.join(' ') == ' ') {
+    return 'Nome Sobrenome'
+  }
+  return palavras.join(' ')
+}
 
-    // Primeiro separamos o nome completo em partes (que são separadas pelos espaços)
-    // ex: diego ferreira - se torna - [diego] [ferreira]
-    sentence = nome.toLowerCase().split(" ");
-    // Depois iteramos em cada pedaço
-    // Pegando a letra 1 (index = 0) e transformando em maiuscula
-    // Depois juntando o resto do pedaço
-    // ex: [diego] -> d | iego -> D | iego -> [Diego]
-    for (let i = 0; i < sentence.length; i++) {
-      let primeiraLetra = sentence[i][0].toUpperCase();
-      let resto = sentence[i].slice(1); // slice nesse caso retorna o resto, depois da letra 1
-      sentence[i] = primeiraLetra + resto;
-    }
-    // Por fim, retornamos a junçao dos pedaços
-    return sentence.join(" ");
-  } catch(err) {
-    return ''
+function primeirasMaiusculas(palavra) {
+  let n = palavra.length;
+  if (n > 1) {
+    let primeiraLetra = palavra[0].toUpperCase()
+    let resto = palavra.slice(1) //Retorna da letra 1 para frente: "diego".slice(1) = "iego"
+    palavra = primeiraLetra + resto;
+    return palavra
+  } else {
+    return palavra.toUpperCase()
   }
 }
 
+/* function editaNome(nome) {
+  nome = nome.toLowerCase();
+  if (nomeInput.value === '' && sobrenomeInput.value === '') {
+    return 'Nome Sobrenome'
+  } else if (sobrenomeInput.value === '') {
+    let editado = primeirasMaiusculas(nome) + '   '
+    return editado
+  } else if (nomeInput.value === '') {
+    return 'Nome ' + primeirasMaiusculas(nome)
+  }
+}
+
+function primeirasMaiusculas(txt) {
+  console.log('asdsad')
+  let sentence = txt.toLowerCase().split(" ");
+  console.log(sentence)
+  let n = sentence.length
+  for (let i = 0; i < n; i++) {
+    if (sentence[i].length < 0) {
+      console.log('aqui')
+      console.log(sentence)
+      let primeiraLetra = sentence[i][0].toUpperCase();
+      let resto = sentence[i].slice(1); // slice nesse caso retorna o resto, depois da letra 1
+      sentence[i] = primeiraLetra + resto;
+      console.log('em baixo')
+      console.log(sentence)
+    }
+  }
+  return sentence.join(" ");
+}
+ */
 function editaCelular(cel) {
   try {
-    // 1 - Retira os espaços e simbolos
     cel = cel.replace(/ /g, '');
     cel = cel.replace(/\(/g, '');
     cel = cel.replace(/\)/g, '');
     cel = cel.replace(/\-/g, '');
-    //2 - Confere se tem exatamente 11 numeros
     let n = cel.length;
-    var editado = ''
-    if (n === 11) {
-      // Se sim, retorna o numero no padrao: 99 99999 9999
-      editado = cel.slice(0, 2) + ' ' + cel.slice(2, 3) + '' + cel.slice(3, 7) + ' ' + cel.slice(7)
-      return editado
+    if (n === 0) {
+      return '99 99999 9999'
+    } else if (n < 3) {
+      return cel
+    } else if (n < 7) {
+      return cel.slice(0, 2) + ' ' + cel.slice(2)
+    } else if (n <= 11) {
+      return cel.slice(0, 2) + ' ' + cel.slice(2, 7) + ' ' + cel.slice(7)
     } else {
-      // Senão, mostra um alerta de erro
-      alert('Coloque o telefone no formato 12 12345 1234 (com 11 numeros)');
-      return ''
+      alert('Coloque o telefone no formato 12 12345 1234 (com 11 numeros)')
+      return '99 99999 9999'
     }
-  } catch(err) {}
+  } catch (err) { }
 }
 
-// Define função que confere se o email é da solucaut
-function checkEmail(email) {
-  if (email.includes('@solucaut.com.br')) {
-    return email;
-  } else {
-    alert('Você não está usando o email da Solucaut...');
-    return ''
+function copiar() {
+  var area = document.getElementById("assinatura-div");
+  if (document.body.createTextRange) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(area);
+    range.select();
+    document.execCommand("Copy");
+    alert("Copiado para a area de tranferencia");
+  } else if (window.getSelection) {
+    var selection = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(area);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand("Copy");
+    alert("Copiado para a area de tranferencia");
   }
 }
+
