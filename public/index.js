@@ -28,7 +28,7 @@ function btn() {
   celularField.innerHTML = celularEditado;
   cargoField.innerHTML = cargo;
 
-  celularField.setAttribute('href', `tel:${celularEditado.replace(/ /g, '')}`);
+  celularField.setAttribute('href', `https://wa.me/55${celularEditado.replace(/ /g, '')}`);
 }
 
 function editaNome(nome) {
