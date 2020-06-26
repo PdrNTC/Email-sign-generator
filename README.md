@@ -1,28 +1,26 @@
-# Gerador de Assinaturas 
+# Email Sign Generator
 
-Gerador de assinaturas para clients de email desenvolvido para os membros da Solucaut.
 
-## Iniciando 
+## Feedbacks
+[x] - Tirar o email
 
-Uma demonstração pode ser encontrada em https://solucaut.com.br/assinatura 
+[x] - Colocar o email contato@solucaut.com.br ao invés do pessoal
 
-![preview-assinatura](https://user-images.githubusercontent.com/23709916/82962036-70d25f00-9f95-11ea-8de4-7ad20763c8ca.png)
+[x] - Colocar um identificador no telefone: pessoal vs empresa
 
-### Pré-requisitos
+[x] - Consertar as imagens
 
-É necessário apenas um navegador web e editor de código para fazer alterações no projeto.
+## Talvez
+[x] - Colocar redes socias da empresa ou da pessoa
 
-## Construído com
+    [x] - Facebook
 
-* [Bootstrap](https://getbootstrap.com/) - Framework do front-end
-* [Hubspot](https://www.hubspot.com/email-signature-generator) - Modelo base para a assinatura
+    [x] - Instagram
 
-## Autores
+    [x] - LinkedIn
 
-* **Diego Ferreira** - *back-end* - [Diego Lopes Ferreira](https://github.com/Diego-Lopes-Ferreira)
-* **Pedro Tashima** - *scrum master* - [Tashima42](https://github.com/Tashima42)
-* **Guilherme Schmidt** - *front-end* - [Guilherme Schmidt](https://github.com/Diego-Lopes-Ferreira)
+[ ] - Tirar endereço físico
 
-##  Licença
+## bugs
+[x] - Se não tiver o nome ou sobrenome - volta a palavra NOME
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
