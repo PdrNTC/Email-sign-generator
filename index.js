@@ -114,7 +114,7 @@ function copiar() {
     range.moveToElementText(area);
     range.select();
     document.execCommand("Copy");
-    alert("Copiado para a area de tranferencia");
+   // alert("Copiado para a area de tranferencia");
   } else if (window.getSelection) {
     var selection = window.getSelection();
     var range = document.createRange();
@@ -122,7 +122,7 @@ function copiar() {
     selection.removeAllRanges();
     selection.addRange(range);
     document.execCommand("Copy");
-    alert("Copiado para a area de tranferencia");
+    //alert("Copiado para a area de tranferencia");
   }
 }
 
