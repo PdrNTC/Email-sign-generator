@@ -19,7 +19,7 @@
 
     - [x] LinkedIn
 
-- [ ] Tirar endereço físico
+- [x] Tirar endereço físico
 
 ## bugs
 - [x] Se não tiver o nome ou sobrenome - volta a palavra NOME
