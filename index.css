@@ -3,52 +3,16 @@ body {
   background-color: #ededed;
 }
 
-label {
-  color: #5b3314;
-}
-
-input,
-select {
-  outline: none;
-  box-sizing: border-box;
-  border: 2px solid #e25210;
-  border-radius: 10px;
-  height: 40px;
-  background-color: #e25210;
-  color: #ffffff;
-  width: 80%;
-  text-align: center;
-}
-input:focus,
-select:focus {
-  outline: none;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-}
-button {
-  border-radius: 10px;
-  border: 0;
-  background-color: #e25210;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 500ms;
-}
-button:active {
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.5);
-}
-button h2 {
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .app {
   padding: 2vh 2vw 2vh 2vw;
 }
 
+.content {
+  max-width: 1040px;
+  margin: auto;
+}
+
+/* Cabecalho */
 .header {
   display: flex;
   flex-direction: column;
@@ -68,10 +32,7 @@ button h2 {
   font-weight: 500;
 }
 
-.content {
-  max-width: 1040px;
-  margin: auto;
-}
+/* Formulario */
 
 .forms {
   margin-top: 5vh;
@@ -82,14 +43,6 @@ button h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.center-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15px;
-}
-
 .form-input {
   display: flex;
   flex-direction: row;
@@ -102,18 +55,64 @@ button h2 {
 .form-input p {
   width: 15%;
 }
+label {
+  color: #5b3314;
+}
+input,
+select {
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid #ff5100;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #ff5100;
+  color: #ffffff;
+  width: 80%;
+  text-align: center;
+}
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+button {
+  border-radius: 10px;
+  border: 0;
+  background-color: #ff5100;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+}
 
-.sign-wraper {
-  background-color: #ededed;
-  padding: 10vh;
+/* Botao */
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+button:active {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+button h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Assinatura */
+.assinatura-wrapper {
+  margin: auto;
+  width: fit-content;
 }
 .assinatura-div {
   background-color: #ffffff;
+  display: inline-block;
 }
-.assinatura-div table {
-  margin: auto;
-}
-
 
 @media (max-width: 800px) {
   .app {
