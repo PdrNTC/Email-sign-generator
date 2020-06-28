@@ -1,11 +1,13 @@
 # 📧 Gerador de assinaturas - Solucaut
-Esse projeto surgiu pela necessidades dos membros da [Solucaut](https://solucaut.com.br), uma [Empresa Júnior](https://www.brasiljunior.org.br/conheca-o-mej),  terem assinaturas profissionais e personalizadas em seus emails corporativos, porém, ao mesmo tempo, dentro de um padrão definido para toda a Empresa.  
+Esse projeto surgiu pela necessidades dos membros da [Solucaut](https://solucaut.com.br), uma [Empresa Júnior](https://www.brasiljunior.org.br/conheca-o-mej),  terem assinaturas profissionais e personalizadas em seus emails corporativos, porém, ao mesmo tempo, dentro de um padrão definido para toda a Empresa.
+
+![image](https://user-images.githubusercontent.com/23709916/85934678-c5cb0300-b8bc-11ea-9bd9-50bc1bd9660b.png)
 ### 🌐 Versão live
 Uma versão live pode ser econtrada em https://tashima42.github.io/Email-sign-generator.
 > TODO: Substituir a URL pela versão final
 
 ### 💻 Tecnologias utilizadas
-Desde o início a ideia foi manter o projeto o mais simples possível, por esse motivo todo o backend foi programado usando JavaScrip, tanto a homepage quanto a assinatura em HTML e a estilização, CSS puro.
+Desde o início a ideia foi manter o projeto o mais simples possível, por esse motivo todo o backend foi programado usando JavaScript, tanto a homepage quanto a assinatura em HTML e a estilização, CSS puro.
 
 ### 🔌 Utilizando a ferramenta
 * Se você **é um membro** da Solucaut, é só acessar [essa página](https://assinatura.solucaut.com.br) e inserir suas informações para criar a assinatura. As instruções para adicionar ao Gmail você encontra [aqui](link/wik) .
