@@ -35,5 +35,3 @@ Desde o início a ideia foi manter o projeto o mais simples possível, por esse 
 | [![](https://github.com/Diego-Lopes-Ferreira.png?size=150)](https://github.com/Diego-Lopes-Ferreira) | [![](https://github.com/tashima42.png?size=150)](https://github.com/tashima42) | [![](https://github.com/Guilherme-Schmidt.png?size=150)](https://github.com/Guilherme-Schmidt) |
 |--|--|--|
 | [@Diego-Lopes-Ferreira](https://github.com/Diego-Lopes-Ferreira) | [@Tashima42](https://github.com/tashima42) | [@Guilherme-Schimidt](https://github.com/Guilherme-Schmidt) |
-
-https://github.com/Guilherme-Schmidt
