@@ -107,7 +107,10 @@ button h2 {
 /* Assinatura */
 .assinatura-wrapper {
   margin: auto;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .assinatura-div {
   background-color: #ffffff;

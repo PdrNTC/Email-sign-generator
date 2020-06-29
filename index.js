@@ -33,11 +33,12 @@ function btn() {
 
   // coloca os valores nos lugares na assinatura
   nomeCompletoField.innerHTML = editaNome(nomeCompleto);
-  celularField.innerHTML = editaCelular(celular.trim())
+  celularField.innerHTML = editaCelular(celular)
   cargoField.innerHTML = cargo;
 
   // configura os atributos de link
-  celularField.setAttribute('href', `https://wa.me/55${celularEditado.replace(/ /g, '')}`);
+  celularField.setAttribute('href', `https://wa.me/55${editaCelular(celular).replace(/ /g, '')}`);
+  // wa.me e o site que redireciona para o whatsapp com o numero a frente
 }
 
 function editaNome(nome) {
