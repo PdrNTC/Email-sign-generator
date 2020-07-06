@@ -12,7 +12,10 @@ Esse projeto surgiu pela necessidades dos membros da [Solucaut](https://solucaut
 Uma versão live pode ser econtrada em [assinatura.solucaut.com.br](https://assinatura.solucaut.com.br)
 
 ## Tecnologias utilizadas 💻
-Desde o início a ideia foi manter o projeto o mais simples possível, por esse motivo todo o backend foi programado usando JavaScript, tanto a homepage quanto a assinatura em HTML e a estilização, CSS puro.
+Desde o início a ideia foi manter o projeto o mais simples possível, por esse motivo, nenhuma biblioteca externa do Javascript ou Framework para CSS foi utilizado.
+* Javascript
+* HTML
+* CSS
 
 ## Utilizando a ferramenta 🔌
 * Se você **é um membro** da Solucaut, é só acessar [essa página](https://assinatura.solucaut.com.br) e inserir suas informações para criar a assinatura. As instruções para adicionar ao Gmail você encontra [aqui](https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/wiki/Gerando-uma-assinatura) .
