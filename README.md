@@ -4,7 +4,7 @@ Esse projeto surgiu pela necessidades dos membros da [Solucaut](https://solucaut
 
 ![image](https://user-images.githubusercontent.com/23709916/85934678-c5cb0300-b8bc-11ea-9bd9-50bc1bd9660b.png)
 
-## TLDR;
+## TL;DR
 - [Como criar sua assinatura e adicionar no Gmail](https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/wiki/Gerando-uma-assinatura)
 - [Criando a sua própria versão da ferramenta](https://github.com/Diego-Lopes-Ferreira/Email-sign-generator/wiki/Criando-a-sua-pr%C3%B3pria-vers%C3%A3o)
 
@@ -32,7 +32,7 @@ Desde o início a ideia foi manter o projeto o mais simples possível, por esse 
  * Dando sugestões de novas features ou melhorias
  
  ## Licença 📕
- Esse projeto está sob a licença MIT, o que quer dizer que você pode fazer sua própria versão e inclusive distribuir comercialmente, então fique a vontade para criar seu fork.
+ Esse projeto está sob a licença [MIT](https://github.com/Tashima42/Email-sign-generator/blob/master/LICENSE.md), o que quer dizer que você pode fazer sua própria versão e inclusive distribuir comercialmente, então fique a vontade para criar seu fork.
  
  ## Contribuidores 🗿
 | [![](https://github.com/Diego-Lopes-Ferreira.png?size=150)](https://github.com/Diego-Lopes-Ferreira) | [![](https://github.com/tashima42.png?size=150)](https://github.com/tashima42) | [![](https://github.com/Guilherme-Schmidt.png?size=150)](https://github.com/Guilherme-Schmidt) |
