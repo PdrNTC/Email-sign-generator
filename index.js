@@ -134,3 +134,26 @@ function copiar() {
     alert("Copiado para a area de tranferencia");
   }
 }
+
+function desenharImagem() {
+    	var canvas = document.getElementById('idCanvas');
+    	var context = canvas.getContext('2d');
+   
+	var imageObj = new Image();
+	    
+
+  	imageObj.onload = function() {
+    		context.drawImage(imageObj, 0, 0);
+    		context.font = "40px Calibri";
+    		context.fillStyle = "red";
+    		context.fillText("My TEXT!", 50, 100);
+	    
+    		var canvas = document.getElementById('idCanvas');
+   	 	var dataURL = canvas.toDataURL();
+
+		const downloadButton = document.querySelector(".download-image")
+    		downloadButton.href = `data:application/octet-stream;${dataURL}`
+	}
+	imageObj.setAttribute('crossOrigin', 'anonymous');
+	imageObj.src = "Users/tashima-utfpr/projects/personal/Email-sign-generator/assets/imgs/assinatura-modelo.png";
+};
